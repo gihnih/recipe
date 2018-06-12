@@ -507,9 +507,9 @@ var recipesRoutes = [
     {
         path: '', component: __WEBPACK_IMPORTED_MODULE_3__recipes_component__["a" /* RecipesComponent */], children: [
             { path: '', component: __WEBPACK_IMPORTED_MODULE_2__recipe_start_recipe_start_component__["a" /* RecipeStartComponent */] },
-            { path: 'new', component: __WEBPACK_IMPORTED_MODULE_5__recipe_edit_recipe_edit_component__["a" /* RecipeEditComponent */] },
+            { path: 'new', component: __WEBPACK_IMPORTED_MODULE_5__recipe_edit_recipe_edit_component__["a" /* RecipeEditComponent */], canActivate: [__WEBPACK_IMPORTED_MODULE_4__auth_auth_guard_service__["a" /* AuthGuard */]] },
             { path: ':id', component: __WEBPACK_IMPORTED_MODULE_1__recipe_detail_recipe_detail_component__["a" /* RecipeDetailComponent */] },
-            { path: ':id/edit', component: __WEBPACK_IMPORTED_MODULE_5__recipe_edit_recipe_edit_component__["a" /* RecipeEditComponent */] },
+            { path: ':id/edit', component: __WEBPACK_IMPORTED_MODULE_5__recipe_edit_recipe_edit_component__["a" /* RecipeEditComponent */], canActivate: [__WEBPACK_IMPORTED_MODULE_4__auth_auth_guard_service__["a" /* AuthGuard */]] },
         ]
     },
 ];
